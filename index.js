@@ -55,6 +55,8 @@ addProduct("Bread", 50, 20);
 updateStock(1, 67);
 updateStock(2, -19);
 
+
+
 // Function to generate report by Olaleye Oluwatomide Paulina : paulinaarike@outlook.com
 function generateStock() {
     let totalItemsValue = 0;
@@ -79,3 +81,24 @@ generateStock();
 
 
 // Function to search products by Amos Gloria : amoskesegloria@outlook.com
+
+function searchProduct(productName) {
+    const searchResults = inventory.filter(item =>
+         item.name.toLowerCase().includes(productName.toLowerCase()));
+
+    if (searchResults.length > 0) {
+        console.log("Products found:");
+        searchResults.forEach(product => {
+            console.log(`Product ID: ${product.id}, 
+                        Name: ${product.name},
+                        Price: ${product.price},
+                        Quantity: ${product.quantity}`);
+        });
+    } else {
+        console.log("No products found with that name: ${product.name}.");
+    }
+}
+
+searchProduct("bread"); 
+searchProduct("milk");  
+searchProduct("apple"); 
