@@ -3,8 +3,8 @@
 let inventory = [];
 let name;
 let i = 1;
-while(i>=1){
-    name = prompt("Enter a name of a product or 0 to exit: ");
+while(i >= 1){
+    name = prompt("Enter name of a product or 0 to exit: ");
     if (name=="0"){
         break;
     }
@@ -15,9 +15,7 @@ while(i>=1){
     i++;
 }
 
-
 function addProduct(name,price,qty){
-    
     let product = {
         id:inventory.length + 1,
         name: name,
@@ -26,11 +24,6 @@ function addProduct(name,price,qty){
     };
      inventory.push(product);
 }
-
-
-console.log(inventory);
-
-
 
 // Function to remove product by Nakayiza Kevina : nakayizakevina@outlook.com
 
@@ -43,12 +36,24 @@ function removeProduct(productName){
     }
 }
 
+
 removeProduct("Bread");
 
+
 // Function to update stock by Nancy Ndungu : nyokabi5991@outlook.com
-
-
-
+function updateStock(id, change) {
+    const product = inventory.find(item => item.id === id);
+    if (product) {
+        product.quantity += change;
+        console.log(`${product.name} updated. New quantity: ${product.quantity}`);
+    } else {
+        console.log("Product not found");
+    }
+}
+addProduct("milk", 40, 10);
+addProduct("Bread", 50, 20);  
+updateStock(1, 67);
+updateStock(2, 9);
 
 // Function to generate report by Olaleye Oluwatomide Paulina : paulinaarike@outlook.com
 
