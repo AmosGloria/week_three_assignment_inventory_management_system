@@ -53,10 +53,28 @@ function updateStock(id, change) {
 addProduct("milk", 40, 10);
 addProduct("Bread", 50, 20);  
 updateStock(1, 67);
-updateStock(2, -9);
+updateStock(2, -19);
 
 // Function to generate report by Olaleye Oluwatomide Paulina : paulinaarike@outlook.com
-
+function generateStock() {
+    let totalItemsValue = 0;
+    let lowStockItems = [];
+    for (let index = 0; index < inventory.length; index++) {
+        let productValue = inventory[index].price * inventory[index].quantity;
+        totalItemsValue += productValue;
+        if (inventory[index].quantity <= 10) {
+            lowStockItems.push(inventory[index])
+        }
+    }
+    let inventoryReport = {
+        "Total Products": inventory.length, 
+        "Total Value of Items": totalItemsValue,
+        "Low Stock Items": lowStockItems,
+        "All Products": inventory
+    };
+    console.log(inventoryReport);
+}
+generateStock();
 
 
 
