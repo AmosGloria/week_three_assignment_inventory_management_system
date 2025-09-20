@@ -44,6 +44,7 @@ function removeProduct(productName){
 }
 
 removeProduct("Bread");
+
 // Function to update stock by Nancy Ndungu : nyokabi5991@outlook.com
 
 
