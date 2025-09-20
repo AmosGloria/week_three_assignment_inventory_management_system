@@ -34,8 +34,16 @@ console.log(inventory);
 
 // Function to remove product by Nakayiza Kevina : nakayizakevina@outlook.com
 
+function removeProduct(productName){
+    const index = inventory.findIndex(item => item.name === productName)
+    if (index !== -1){
+        inventory.splice(index, 1);
+    } else {
+        console.log("Product not found")
+    }
+}
 
-
+removeProduct("Bread");
 // Function to update stock by Nancy Ndungu : nyokabi5991@outlook.com
 
 
