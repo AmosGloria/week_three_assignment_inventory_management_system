@@ -1,5 +1,3 @@
-const inventory = [];
-
 
 // Function to add a Product to the inventory by Mariam Mussa : mariamkilangi@outlook.com
 
