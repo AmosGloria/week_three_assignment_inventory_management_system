@@ -16,8 +16,6 @@ while(i>=1){
 }
 
 
-
-
 function addProduct(name,price,qty){
     
     let product = {
