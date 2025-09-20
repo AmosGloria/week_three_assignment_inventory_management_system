@@ -12,7 +12,7 @@ Update Stock: Increase or decrease the stock quantity of an existing product.
 
 Generate Report: View a summary of the inventory.
 
-Team Members
+Team Members.
 
 Team 12: Console Queens Team
 
