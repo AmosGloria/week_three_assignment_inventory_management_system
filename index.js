@@ -53,7 +53,7 @@ function updateStock(id, change) {
 addProduct("milk", 40, 10);
 addProduct("Bread", 50, 20);  
 updateStock(1, 67);
-updateStock(2, 9);
+updateStock(2, -9);
 
 // Function to generate report by Olaleye Oluwatomide Paulina : paulinaarike@outlook.com
 
