@@ -95,7 +95,7 @@ function searchProduct(productName) {
                         Quantity: ${product.quantity}`);
         });
     } else {
-        console.log(`No products found with that name: ${product.name}.`);
+        console.log("No products found with that name.");
     }
 }
 
